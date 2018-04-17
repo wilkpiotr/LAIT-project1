@@ -11,20 +11,63 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="register">
+
+        <div class="container register">
             <h2>Register Form</h2>
-            <form class="register form">
+            <form class="register">
                 <input type="text" name="register-name" placeholder="Username">
                 <input type="password" name="register-password" placeholder="Password">
                 <input type="password" name="register-confirm-password" placeholder="Confirm Password">
                 <input type="email" name="register-email" placeholder="Email">
                 <input type="text" name="location" placeholder="Your location">
-                <label for="register-checkbox">I have read and accept terms of use</label>
+                 <label for="register-checkbox">I have read and accept terms of use</label>
                 <input type="checkbox" name="register-checkbox" value="accept">
-                <button  class ="button button-register" type="submit">Sign up</button>
+                <button  class ="green-button button-register" type="submit">Sign up</button>
             </form>
         </div>
-        <div class="sign-in-form"></div>
+
+        <div class="container sign-in-form">
+            <h2>Sign In Form</h2>
+            <form class="sign-in">
+                <input type="text" name="sign-in-name" placeholder="Username">
+                <input type="password" name="sign-in-password" placeholder="password">
+                <label for="sign-in-checkbox">Remember Me</label>
+                <input type="checkbox" name="sign-in-checkbox" value="accept">
+                <button class="green-button button-sign-in" type="submit">Sign In</button>
+            </form>
+        </div>
+        
+        <div class="container recover">
+            <h2>Recover Form</h2>
+            <form class="recover">
+                <input type="email" name="recover-email" placeholder="Enter your Email">
+                <input type="tel" name="recover-tel" placeholder="Enter your Phone Number">
+                <button class="green-button send" type="submit">Sign In</button>
+                <button class="lightgrenn-button done" type="submit">Sign In</button>
+            </form>
+        </div>
+
+        <div class="container send">
+            <h2>Send Email</h2>
+            <form class="send-email">
+                <input type="text" name="send-email-name" placeholder="Your Name">
+                <input type="email" name="send-email-email" placeholder="Your Email">
+                <textarea name="send-email-textarea" cols="30" rows="10">Type your massage</textarea>
+                <label for="send-email-checkbox">Send copy to my Email</label>
+                <input type="checkbox" name="send-email-checkbox" value="accept">
+                <button class="green-button send" type="submit">Send Email</button>
+            </form>
+        </div>
+
+        <div class="container subscribe">
+            <h2>Subscribe Form</h2>
+            <form class="subscribe-form">
+                <input type="email" name="subscribe-email" placeholder="Enter Your Email">
+                <button class="green-button" type="submit">Subscribe</button>
+                <button class="red-button" type="submit">No, Thanks</button>
+            </form>
+        </div>
+
     </div>
 </body>
 </html>
