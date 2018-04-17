@@ -5,7 +5,7 @@
 body {
     display: block;
     width: 100vw;
-    height: 100vh;
+    
     font-family: 'Titillium Web', sans-serif;
     font-size: 16px;
     line-height: 1.2;
@@ -22,6 +22,23 @@ body {
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-size: auto, auto, cover;
 }
+
+.wrapper::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.left-column {
+    width: 30%;
+    float: left;
+    margin: 10%;
+}
+.right-column {
+    width: 30%;
+    float: right;
+    margin: 10%;
+}
+
 h2 {
     font-size: 32px;
     font-weight: 400;
@@ -33,6 +50,7 @@ h2 {
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 40px;
+    width: 100%
 }
 form {
     width: 100%;
@@ -40,15 +58,19 @@ form {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
-    margin-bottom: 40px;
 }
-input {
+input, textarea {
     display: block;
     background-color: white;
     border: 1px solid rgb(198, 198, 198);
-    padding: 12px 0;
+    padding: 12px;
+    padding-left: 40px;
     margin-bottom: 20px;
-    border-radius: 5px;
+    border-radius: 4px;
+    inline-size: 100%;
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 input::placeholder, label { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -56,16 +78,98 @@ input::placeholder, label { /* Chrome, Firefox, Opera, Safari 10.1+ */
     opacity: 1; /* Firefox */
     font-size: 16px;
     font-weight: 300px;
+    
 }
 
 :-ms-input-placeholder, label { /* Internet Explorer 10-11 */
     color: rgb(175, 175, 175);
     font-size: 16px;
     font-weight: 300px;
+    
 }
 
 ::-ms-input-placeholder, label { /* Microsoft Edge */
     color: rgb(175, 175, 175);
     font-size: 16px;
     font-weight: 300px;
+   
 }
+
+.green-button {
+    font-size: 24px;
+    font-weight: normal;
+    color: white;  
+    background-color: rgb(159, 213, 58);
+    border: 1px solid rgb(59, 154, 0);
+    padding: 10px 0;
+    border-radius: 4px;
+    width: 100%;
+}
+.greenlight-button {
+    font-size: 24px;
+    font-weight: normal;
+    color: white;  
+    background-color: rgb(195, 223, 161);
+    border: 1px solid rgb(144, 202, 109);
+    padding: 10px 0;
+    border-radius: 4px;
+    width: 100%;
+    margin-left: auto;
+}
+.red-button {
+    font-size: 24px;
+    font-weight: normal;
+    color: white;  
+    background-color: rgb(245, 83, 101);
+    border: 1px solid rgb(162, 32, 42);
+    padding: 10px 0;
+    border-radius: 4px;
+    width: 100%;
+    margin-left: auto;
+}
+input[type="text"] {
+    background: url("../image/user-icon.png") no-repeat left 10px center;
+}
+input[type="email"] {
+    background: url("../image/mail-icon.png") no-repeat left 10px center;
+}
+input[type="tel"] {
+    background: url("../image/mobile-icon.png") no-repeat left 10px center;
+}
+input[type="password"] {
+    background: url("../image/lock-icon.png") no-repeat left 10px center;
+}
+input[name="location"] {
+    background: url("../image/map-icon.png") no-repeat left 10px center;
+}
+input[type="checkbox"] {
+    display: inline;
+}
+label {
+    display: inline;
+}
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgb(175, 175, 175)
+  }
+input::-moz-placeholder { /* Firefox 19+ */
+    color: rgb(175, 175, 175)
+  }
+input:-ms-input-placeholder { /* IE 10+ */
+    color: rgb(175, 175, 175)
+  }
+input:-moz-placeholder { /* Firefox 18- */
+    color: rgb(175, 175, 175)
+  }
+
+textarea {
+      resize: none;
+      
+  }
+.green-button-div {
+    width: 45%;
+    display: inline-block;
+  }
+.second-button-div {
+    width: 45%;
+    display: inline-block;
+  }
