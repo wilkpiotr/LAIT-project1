@@ -18,12 +18,12 @@
             <div class="container register">
                 <h2>Register Form</h2>
                 <form class="register">
-                    <input type="text" name="register-name" placeholder="Username">
-                    <input type="password" name="register-password" placeholder="Password">
-                    <input type="password" name="register-confirm-password" placeholder="Confirm Password">
-                    <input type="email" name="register-email" placeholder="Email">
-                    <input type="text" name="location" placeholder="Your Location">
-                    <input type="checkbox" name="register-checkbox" value="accept">
+                    <input type="text" name="register-name" id="register-name" placeholder="Username">
+                    <input type="password" name="register-password" id="register-password" placeholder="Password">
+                    <input type="password" name="register-confirm-password" id="register-confirm-password" placeholder="Confirm Password">
+                    <input type="email" name="register-email" id="register-email" placeholder="Email">
+                    <input type="text" name="location" id="location" placeholder="Your Location">
+                    <input type="checkbox" name="register-checkbox"  id="register-checkbox" value="accept">
                     <label for="register-checkbox">I have read and accept terms of use</label>
                     <button  class ="green-button button-register" type="submit">Sign up</button>
                 </form>
@@ -32,10 +32,10 @@
             <div class="container send">
                 <h2>Send Email</h2>
                 <form class="send-email">
-                    <input type="text" name="send-email-name" placeholder="Your Name">
-                    <input type="email" name="send-email-email" placeholder="Your Email">
-                    <textarea name="send-email-textarea" rows="10" placeholder="Type your massage"></textarea>
-                    <input type="checkbox" name="send-email-checkbox" value="accept">
+                    <input type="text" name="send-email-name" id="send-email-name" placeholder="Your Name">
+                    <input type="email" name="send-email-email" id="send-email-email" placeholder="Your Email">
+                    <textarea name="send-email-textarea" id="send-email-textarea" rows="10" placeholder="Type your massage"></textarea>
+                    <input type="checkbox" name="send-email-checkbox" id="send-email-checkbox" value="accept">
                     <label for="send-email-checkbox">Send copy to my Email</label>
                     <button class="green-button send" type="submit">Send Email</button>
                 </form>
@@ -48,20 +48,20 @@
             <div class="container sign-in-form">
                 <h2>Sign In Form</h2>
                 <form class="sign-in">
-                    <input type="text" name="sign-in-name" placeholder="Username">
-                    <input type="password" name="sign-in-password" placeholder="Password">
-                    <input type="checkbox" name="sign-in-checkbox" value="accept">
+                    <input type="text" name="sign-in-name" id="sign-in-name" placeholder="Username">
+                    <input type="password" name="sign-in-password" id="sign-in-password" placeholder="Password">
+                    <input type="checkbox" name="sign-in-checkbox" id="sign-in-checkbox" value="accept">
                     <label for="sign-in-checkbox">Remember Me</label>
-                    <button class="green-button button-sign-in" type="submit">Sign In</button>
+                    <button class="green-button button-sign-in" type="link">Sign In</button>
                 </form>
             </div>
                     
             <div class="container recover">
                 <h2>Recover Form</h2>
                 <form class="recover">
-                    <input type="email" name="recover-email" placeholder="Enter your Email">
-                    <input type="tel" name="recover-tel" placeholder="Enter your Phone Number">
-                    <div class="green-button-div"><button class="green-button send" type="submit">Sign In</button></div><div class="second-button-div"><button class="greenlight-button done" type="submit">Sign In</button></div>                           
+                    <input type="email" name="recover-email" id="recover-email" placeholder="Enter your Email">
+                    <input type="tel" name="recover-tel" id="recover-tel" placeholder="Enter your Phone Number">
+                    <div class="green-button-div"><button class="green-button send" type="submit">Sign In</button></div><div class="second-button-div"><button class="greenlight-button done" type="submit">Done</button></div>                           
                 </form>
             </div>
             
@@ -69,8 +69,8 @@
             <div class="container subscribe">
                 <h2>Subscribe Form</h2>
                 <form class="subscribe-form">
-                    <input type="email" name="subscribe-email" placeholder="Enter Your Email">
-                    <div class="green-button-div"><button class="green-button" type="submit">Subscribe</button></div><div class="second-button-div"><button class="red-button" type="submit">No, Thanks</button></div>    </form>
+                    <input type="email" name="subscribe-email" id="subscribe-email" placeholder="Enter Your Email">
+                    <div class="green-button-div"><button class="green-button" type="submit">Subscribe</button></div><div class="second-button-div"><button class="red-button" type="reset">No, Thanks</button></div>    </form>
             </div>
 
         </div>
