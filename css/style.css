@@ -13,7 +13,7 @@ body {
 .wrapper {
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
     margin: auto;
     padding: 15vh 7vw 10vh;
     background-image: url("../image/top-logo.png"), url("../image/bottom-logo.png"), url("../image/background.jpg");
@@ -50,7 +50,8 @@ h2 {
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 40px;
-    width: 100%
+    width: 100%;
+    position: relative;
 }
 form {
     width: 100%;
@@ -104,6 +105,7 @@ input::placeholder, label { /* Chrome, Firefox, Opera, Safari 10.1+ */
     padding: 10px 0;
     border-radius: 4px;
     width: 100%;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 .green-button:hover {
     background-color: white;
@@ -119,6 +121,7 @@ input::placeholder, label { /* Chrome, Firefox, Opera, Safari 10.1+ */
     border-radius: 4px;
     width: 100%;
     margin-left: auto;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 .greenlight-button:hover {
     background-color: white;
@@ -134,6 +137,7 @@ input::placeholder, label { /* Chrome, Firefox, Opera, Safari 10.1+ */
     border-radius: 4px;
     width: 100%;
     margin-left: auto;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
 }
 .red-button:hover {
     background-color: white;
@@ -162,6 +166,29 @@ input[type="checkbox"] {
     height: 25px;
     background-color: white;
     border-radius: 4px;
+    visibility: hidden;
+    z-index: -1;
+}
+.label-check {
+    position: relative;
+    z-index: 3;
+    /* padding-left: 40px; */
+}
+.label-check::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -3;
+    z-index: 5;
+    display: block;
+    border: 1px solid rgb(198, 198, 198);
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 4px;
+}
+input:checked + .label-check::before {
+    background: url("../image/check-ok.png") no-repeat center;
 }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -191,3 +218,11 @@ textarea {
     display: inline-block;
     padding-left: 10px;
   }
+
+@media screen and (max-width: 991px) {
+    .left-column, .right-column {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+}
